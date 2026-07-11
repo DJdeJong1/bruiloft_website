@@ -1,0 +1,28 @@
+<script>
+
+const photos = [
+    "images/PXL_20260517_032531103.jpg"
+];
+
+let currentPhoto = 0;
+
+const image = document.getElementById("slideshow-image");
+
+function showPhoto() {
+    image.src = photos[currentPhoto];
+}
+
+function nextPhoto() {
+    currentPhoto = (currentPhoto + 1) % photos.length;
+    showPhoto();
+}
+
+function previousPhoto() {
+    currentPhoto = (currentPhoto - 1 + photos.length) % photos.length;
+    showPhoto();
+}
+
+// Automatic slideshow
+setInterval(nextPhoto, 4000);
+
+</script>
