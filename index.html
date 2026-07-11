@@ -65,21 +65,39 @@
 								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
 							</article>
 
-						<!-- fotos --> 
+						<!-- Foto's -->
 							<article id="fotos">
-							    <h2 class="major">Foto's</h2>
+								<h2 class="major">Foto's</h2>
 							
-							    <div class="slideshow">
-							        <img id="slideshow-image"
-							             src="images/PXL_20260517_032531103.jpg"
-							             alt="Foto"
-							             style="width:100%; border-radius:8px;">
-							    </div>
+								<div class="wedding-slideshow">
+									<button
+										type="button"
+										class="slide-button previous"
+										id="previous-photo"
+										aria-label="Vorige foto">
+										&#10094;
+									</button>
 							
-							    <div style="margin-top:1em; text-align:center;">
-							        <button onclick="previousPhoto()">← Vorige</button>
-							        <button onclick="nextPhoto()">Volgende →</button>
-							    </div>
+									<img
+										id="slideshow-image"
+										src="images/20230713_123352.jpg"
+										alt="Foto van Regina en Daan"
+									/>
+							
+									<button
+										type="button"
+										class="slide-button next"
+										id="next-photo"
+										aria-label="Volgende foto">
+										&#10095;
+									</button>
+								</div>
+							
+								<div class="slideshow-information">
+									<span id="photo-counter"></span>
+								</div>
+							
+								<div id="slideshow-dots" class="slideshow-dots"></div>
 							</article>
 
 						<!-- Elements -->
