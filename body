@@ -1,28 +1,145 @@
 <script>
+	document.addEventListener("DOMContentLoaded", function () {
+		const photos = [
+			"images/20230713_123352.jpg",
+			"images/DSC_0326.JPG",
+			"images/DSC_1725.JPG",
+			"images/IMG-20181208-WA0008.jpg",
+			"images/IMG-20211101-WA0007.jpg",
+			"images/IMG-20220418-WA0002.jpg",
+			"images/IMG-20220502-WA0018.jpg",
+			"images/IMG-20241030-WA0028.jpg",
+			"images/IMG-20250531-WA0004.jpg",
+			"images/IMG-20250619-WA0005.jpg",
+			"images/IMG_20191120_112832.jpg",
+			"images/IMG_20200806_094149.jpg",
+			"images/IMG_20210213_150546.jpg",
+			"images/IMG_20210516_101220.jpg",
+			"images/IMG_20220429_132938.jpg",
+			"images/IMG_20220926_130104.jpg",
+			"images/IMG_20221030_100826.jpg",
+			"images/IMG_20221101_125610.jpg",
+			"images/IMG_20230710_174448.jpg",
+			"images/IMG_20230710_194120.jpg",
+			"images/IMG_20240321_162936.jpg",
+			"images/IMG_20240825_110410.jpg",
+			"images/IMG_20241026_111254.jpg",
+			"images/IMG_20250217_141224.jpg",
+			"images/IMG_20250802_175546.jpg",
+			"images/PXL_20251220_131939581 (1).jpg",
+			"images/PXL_20260517_032531103.jpg"
+		];
 
-const photos = [
-    "images/PXL_20260517_032531103.jpg"
-];
+		const image = document.getElementById("slideshow-image");
+		const previousButton = document.getElementById("previous-photo");
+		const nextButton = document.getElementById("next-photo");
+		const counter = document.getElementById("photo-counter");
+		const dotsContainer = document.getElementById("slideshow-dots");
 
-let currentPhoto = 0;
+		if (
+			!image ||
+			!previousButton ||
+			!nextButton ||
+			!counter ||
+			!dotsContainer
+		) {
+			return;
+		}
 
-const image = document.getElementById("slideshow-image");
+		let currentPhoto = 0;
+		let slideshowTimer;
 
-function showPhoto() {
-    image.src = photos[currentPhoto];
-}
+		function createDots() {
+			photos.forEach(function (_, index) {
+				const dot = document.createElement("button");
 
-function nextPhoto() {
-    currentPhoto = (currentPhoto + 1) % photos.length;
-    showPhoto();
-}
+				dot.type = "button";
+				dot.className = "slideshow-dot";
+				dot.setAttribute("aria-label", "Ga naar foto " + (index + 1));
 
-function previousPhoto() {
-    currentPhoto = (currentPhoto - 1 + photos.length) % photos.length;
-    showPhoto();
-}
+				dot.addEventListener("click", function () {
+					showPhoto(index);
+					restartSlideshow();
+				});
 
-// Automatic slideshow
-setInterval(nextPhoto, 4000);
+				dotsContainer.appendChild(dot);
+			});
+		}
 
+		function updateDots() {
+			const dots = dotsContainer.querySelectorAll(".slideshow-dot");
+
+			dots.forEach(function (dot, index) {
+				dot.classList.toggle("active", index === currentPhoto);
+			});
+		}
+
+		function showPhoto(index) {
+			currentPhoto = (index + photos.length) % photos.length;
+
+			image.classList.add("is-changing");
+
+			setTimeout(function () {
+				image.src = encodeURI(photos[currentPhoto]);
+				image.alt =
+					"Foto van Regina en Daan, foto " +
+					(currentPhoto + 1) +
+					" van " +
+					photos.length;
+
+				counter.textContent =
+					(currentPhoto + 1) + " / " + photos.length;
+
+				updateDots();
+				image.classList.remove("is-changing");
+			}, 250);
+		}
+
+		function nextPhoto() {
+			showPhoto(currentPhoto + 1);
+		}
+
+		function previousPhoto() {
+			showPhoto(currentPhoto - 1);
+		}
+
+		function startSlideshow() {
+			slideshowTimer = window.setInterval(nextPhoto, 5000);
+		}
+
+		function restartSlideshow() {
+			window.clearInterval(slideshowTimer);
+			startSlideshow();
+		}
+
+		previousButton.addEventListener("click", function () {
+			previousPhoto();
+			restartSlideshow();
+		});
+
+		nextButton.addEventListener("click", function () {
+			nextPhoto();
+			restartSlideshow();
+		});
+
+		document.addEventListener("keydown", function (event) {
+			if (window.location.hash !== "#fotos") {
+				return;
+			}
+
+			if (event.key === "ArrowLeft") {
+				previousPhoto();
+				restartSlideshow();
+			}
+
+			if (event.key === "ArrowRight") {
+				nextPhoto();
+				restartSlideshow();
+			}
+		});
+
+		createDots();
+		showPhoto(0);
+		startSlideshow();
+	});
 </script>
