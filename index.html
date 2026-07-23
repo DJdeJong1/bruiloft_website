@@ -60,8 +60,43 @@
 							<article id="RSVP">
 								<h2 class="major">RSVP</h2>
 								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+								<p>Laat ons weten of je erbij bent! Vul het formulier hieronder in vóór 1 oktober.</p>
+ 
+								<form method="POST" action="https://formspree.io/f/xnjebeye">
+									<div class="fields">
+										<div class="field half">
+											<label for="rsvp-name">Naam</label>
+											<input type="text" name="naam" id="rsvp-name" placeholder="Voor- en achternaam" required />
+										</div>
+										<div class="field half">
+											<label for="rsvp-email">E-mail</label>
+											<input type="email" name="email" id="rsvp-email" placeholder="jij@voorbeeld.nl" required />
+										</div>
+										<div class="field half">
+											<label for="rsvp-guests">Aantal personen</label>
+											<input type="number" name="aantal_personen" id="rsvp-guests" min="1" value="1" required />
+										</div>
+										<div class="field half">
+											<label for="rsvp-attending">Ben je erbij?</label>
+											<select name="aanwezig" id="rsvp-attending" required>
+												<option value="">-</option>
+												<option value="Ja, ik kom">Ja, ik kom</option>
+												<option value="Nee, ik kan helaas niet">Nee, ik kan helaas niet</option>
+											</select>
+										</div>
+										<div class="field">
+											<label for="rsvp-dietary">Dieetwensen / allergieën</label>
+											<textarea name="dieetwensen" id="rsvp-dietary" placeholder="Laat het ons weten als je iets niet kan eten" rows="4"></textarea>
+										</div>
+										<div class="field">
+											<label for="rsvp-message">Bericht voor het bruidspaar</label>
+											<textarea name="bericht" id="rsvp-message" placeholder="Optioneel" rows="4"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Versturen" class="primary" /></li>
+									</ul>
+								</form>
 							</article>
 
 						<!-- Planning -->
