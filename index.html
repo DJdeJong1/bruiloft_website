@@ -60,9 +60,9 @@
 							<article id="RSVP">
 								<h2 class="major">RSVP</h2>
 								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>Laat ons weten of je erbij bent! Vul het formulier hieronder in vóór 1 oktober.</p>
+								<p>Laat ons weten of je erbij bent! Vul het formulier hieronder in vóór [datum].</p>
  
-								<form method="POST" action="https://formspree.io/f/xnjebeye">
+								<form method="POST" action="https://formspree.io/f/JOUW_FORM_ID" id="rsvp-form">
 									<div class="fields">
 										<div class="field half">
 											<label for="rsvp-name">Naam</label>
@@ -73,16 +73,27 @@
 											<input type="email" name="email" id="rsvp-email" placeholder="jij@voorbeeld.nl" required />
 										</div>
 										<div class="field half">
-											<label for="rsvp-guests">Aantal personen</label>
-											<input type="number" name="aantal_personen" id="rsvp-guests" min="1" value="1" required />
-										</div>
-										<div class="field half">
 											<label for="rsvp-attending">Ben je erbij?</label>
 											<select name="aanwezig" id="rsvp-attending" required>
 												<option value="">-</option>
 												<option value="Ja, ik kom">Ja, ik kom</option>
 												<option value="Nee, ik kan helaas niet">Nee, ik kan helaas niet</option>
 											</select>
+										</div>
+										<div class="field half" id="rsvp-guests-wrapper" style="display:none;">
+											<label for="rsvp-guests">Met hoeveel personen?</label>
+											<select name="aantal_personen" id="rsvp-guests">
+												<option value="">-</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+												<option value="5">5</option>
+												<option value="6">6</option>
+											</select>
+										</div>
+										<div class="field" id="rsvp-guest-names-wrapper" style="display:none;">
+											<div id="rsvp-guest-names"></div>
 										</div>
 										<div class="field">
 											<label for="rsvp-dietary">Dieetwensen / allergieën</label>
