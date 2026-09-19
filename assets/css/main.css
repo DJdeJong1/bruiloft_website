@@ -1136,13 +1136,13 @@ input, select, textarea {
 			position: absolute;
 			bottom: 0;
 			left: 50%;
-			width: 65%;
-			min-width: 20rem;
-			max-width: 55rem;
+			width: 85%;
+			min-width: 24rem;
+			max-width: 70rem;
 			height: auto;
 			transform: translateX(-50%);
 			z-index: 2;
-			opacity: 0.4;
+			opacity: 0.85;
 			pointer-events: none;
 		}
 
@@ -1328,14 +1328,20 @@ input, select, textarea {
 					letter-spacing: 0.2rem;
 					font-size: 0.8rem;
 					border-bottom: 0;
+					-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+					-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+					-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+					transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 				}
 
 					#header nav ul li a:hover {
-						background-color: rgba(58, 54, 48, 0.06);
+						background-color: #3f6d8c;
+						color: #fdfaf2;
 					}
 
 					#header nav ul li a:active {
-						background-color: rgba(58, 54, 48, 0.12);
+						background-color: #33556e;
+						color: #fdfaf2;
 					}
 
 		#header nav.use-middle:after {
