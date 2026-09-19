@@ -95,7 +95,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #1b1f22;
+		background: #f7f2e7;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -140,7 +140,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #ffffff;
+		color: #3f6d8c;
 		font-family: "Source Sans Pro", sans-serif;
 		font-weight: 300;
 		font-size: 1rem;
@@ -152,7 +152,7 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 1px rgba(255, 255, 255, 0.5);
+		border-bottom: dotted 1px rgba(63, 109, 140, 0.5);
 		text-decoration: none;
 		color: inherit;
 	}
@@ -162,7 +162,7 @@ input, select, textarea {
 		}
 
 	strong, b {
-		color: #ffffff;
+		color: #8a3b3b;
 		font-weight: 600;
 	}
 
@@ -175,7 +175,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: #8a3b3b;
 		font-weight: 600;
 		line-height: 1.5;
 		margin: 0 0 1rem 0;
@@ -189,7 +189,7 @@ input, select, textarea {
 		}
 
 		h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
-			border-bottom: solid 1px #ffffff;
+			border-bottom: solid 1px #d7a43c;
 			width: -moz-max-content;
 			width: -webkit-max-content;
 			width: -ms-max-content;
@@ -253,14 +253,14 @@ input, select, textarea {
 	}
 
 	blockquote {
-		border-left: solid 4px #ffffff;
+		border-left: solid 4px #d7a43c;
 		font-style: italic;
 		margin: 0 0 2rem 0;
 		padding: 0.5rem 0 0.5rem 2rem;
 	}
 
 	code {
-		background: rgba(255, 255, 255, 0.075);
+		background: rgba(58, 54, 48, 0.08);
 		border-radius: 4px;
 		font-family: "Courier New", monospace;
 		font-size: 0.9rem;
@@ -284,7 +284,7 @@ input, select, textarea {
 
 	hr {
 		border: 0;
-		border-bottom: solid 1px #ffffff;
+		border-bottom: solid 1px rgba(58, 54, 48, 0.22);
 		margin: 2.75rem 0;
 	}
 
@@ -375,7 +375,7 @@ input, select, textarea {
 		}
 
 	label {
-		color: #ffffff;
+		color: #3f6d8c;
 		display: block;
 		font-size: 0.8rem;
 		font-weight: 300;
@@ -401,7 +401,7 @@ input, select, textarea {
 		transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		background-color: transparent;
 		border-radius: 4px;
-		border: solid 1px #ffffff;
+		border: solid 1px rgba(58, 54, 48, 0.22);
 		color: inherit;
 		display: block;
 		outline: 0;
@@ -425,9 +425,9 @@ input, select, textarea {
 		input[type="tel"]:focus,
 		select:focus,
 		textarea:focus {
-			background: rgba(255, 255, 255, 0.075);
-			border-color: #ffffff;
-			box-shadow: 0 0 0 1px #ffffff;
+			background: rgba(215, 164, 60, 0.08);
+			border-color: #d7a43c;
+			box-shadow: 0 0 0 1px #d7a43c;
 		}
 
 	select {
@@ -441,8 +441,8 @@ input, select, textarea {
 	}
 
 		select option {
-			color: #ffffff;
-			background: #1b1f22;
+			color: #33302b;
+			background: #fdfaf2;
 		}
 
 		select:focus::-ms-value {
@@ -485,7 +485,7 @@ input, select, textarea {
 			-webkit-user-select: none;
 			-ms-user-select: none;
 			user-select: none;
-			color: #ffffff;
+			color: #3f6d8c;
 			cursor: pointer;
 			display: inline-block;
 			font-size: 0.8rem;
@@ -517,7 +517,7 @@ input, select, textarea {
 				-ms-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
 				transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
 				border-radius: 4px;
-				border: solid 1px #ffffff;
+				border: solid 1px rgba(58, 54, 48, 0.22);
 				content: '';
 				display: inline-block;
 				height: 1.65rem;
@@ -531,17 +531,17 @@ input, select, textarea {
 
 		input[type="checkbox"]:checked + label:before,
 		input[type="radio"]:checked + label:before {
-			background: #ffffff !important;
-			border-color: #ffffff !important;
-			color: #1b1f22;
+			background: #8a3b3b !important;
+			border-color: #8a3b3b !important;
+			color: #fdfaf2;
 			content: '\f00c';
 		}
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			background: rgba(255, 255, 255, 0.075);
-			border-color: #ffffff;
-			box-shadow: 0 0 0 1px #ffffff;
+			background: rgba(215, 164, 60, 0.08);
+			border-color: #d7a43c;
+			box-shadow: 0 0 0 1px #d7a43c;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -553,27 +553,27 @@ input, select, textarea {
 	}
 
 	::-webkit-input-placeholder {
-		color: rgba(255, 255, 255, 0.5) !important;
+		color: rgba(58, 54, 48, 0.5) !important;
 		opacity: 1.0;
 	}
 
 	:-moz-placeholder {
-		color: rgba(255, 255, 255, 0.5) !important;
+		color: rgba(58, 54, 48, 0.5) !important;
 		opacity: 1.0;
 	}
 
 	::-moz-placeholder {
-		color: rgba(255, 255, 255, 0.5) !important;
+		color: rgba(58, 54, 48, 0.5) !important;
 		opacity: 1.0;
 	}
 
 	:-ms-input-placeholder {
-		color: rgba(255, 255, 255, 0.5) !important;
+		color: rgba(58, 54, 48, 0.5) !important;
 		opacity: 1.0;
 	}
 
 	.formerize-placeholder {
-		color: rgba(255, 255, 255, 0.5) !important;
+		color: rgba(58, 54, 48, 0.5) !important;
 		opacity: 1.0;
 	}
 
@@ -581,7 +581,7 @@ input, select, textarea {
 
 	.box {
 		border-radius: 4px;
-		border: solid 1px #ffffff;
+		border: solid 1px rgba(58, 54, 48, 0.22);
 		margin-bottom: 2rem;
 		padding: 1.5em;
 	}
@@ -748,7 +748,7 @@ input, select, textarea {
 		}
 
 			ul.alt li {
-				border-top: solid 1px #ffffff;
+				border-top: solid 1px rgba(58, 54, 48, 0.22);
 				padding: 0.5em 0;
 			}
 
@@ -912,7 +912,7 @@ input, select, textarea {
 
 			ul.icons li a {
 				border-radius: 100%;
-				box-shadow: inset 0 0 0 1px #ffffff;
+				box-shadow: inset 0 0 0 1px rgba(58, 54, 48, 0.4);
 				display: inline-block;
 				height: 2.25rem;
 				line-height: 2.25rem;
@@ -921,11 +921,11 @@ input, select, textarea {
 			}
 
 				ul.icons li a:hover {
-					background-color: rgba(255, 255, 255, 0.075);
+					background-color: rgba(58, 54, 48, 0.08);
 				}
 
 				ul.icons li a:active {
-					background-color: rgba(255, 255, 255, 0.175);
+					background-color: rgba(58, 54, 48, 0.15);
 				}
 
 /* Table */
@@ -941,13 +941,13 @@ input, select, textarea {
 	}
 
 		table tbody tr {
-			border: solid 1px #ffffff;
+			border: solid 1px rgba(58, 54, 48, 0.22);
 			border-left: 0;
 			border-right: 0;
 		}
 
 			table tbody tr:nth-child(2n + 1) {
-				background-color: rgba(255, 255, 255, 0.075);
+				background-color: rgba(58, 54, 48, 0.05);
 			}
 
 		table td {
@@ -955,7 +955,7 @@ input, select, textarea {
 		}
 
 		table th {
-			color: #ffffff;
+			color: #8a3b3b;
 			font-size: 0.9em;
 			font-weight: 600;
 			padding: 0 0.75em 0.75em 0.75em;
@@ -963,11 +963,11 @@ input, select, textarea {
 		}
 
 		table thead {
-			border-bottom: solid 2px #ffffff;
+			border-bottom: solid 2px rgba(58, 54, 48, 0.4);
 		}
 
 		table tfoot {
-			border-top: solid 2px #ffffff;
+			border-top: solid 2px rgba(58, 54, 48, 0.4);
 		}
 
 		table.alt {
@@ -975,7 +975,7 @@ input, select, textarea {
 		}
 
 			table.alt tbody tr td {
-				border: solid 1px #ffffff;
+				border: solid 1px rgba(58, 54, 48, 0.22);
 				border-left-width: 0;
 				border-top-width: 0;
 			}
@@ -1014,8 +1014,8 @@ input, select, textarea {
 		background-color: transparent;
 		border-radius: 4px;
 		border: 0;
-		box-shadow: inset 0 0 0 1px #ffffff;
-		color: #ffffff !important;
+		box-shadow: inset 0 0 0 1px rgba(58, 54, 48, 0.4);
+		color: #3f6d8c !important;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.8rem;
@@ -1036,7 +1036,7 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: rgba(255, 255, 255, 0.075);
+			background-color: rgba(58, 54, 48, 0.06);
 		}
 
 		input[type="submit"]:active,
@@ -1044,7 +1044,7 @@ input, select, textarea {
 		input[type="button"]:active,
 		button:active,
 		.button:active {
-			background-color: rgba(255, 255, 255, 0.175);
+			background-color: rgba(58, 54, 48, 0.12);
 		}
 
 		input[type="submit"].icon:before,
@@ -1078,8 +1078,8 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #ffffff;
-			color: #1b1f22 !important;
+			background-color: #8a3b3b;
+			color: #fdfaf2 !important;
 			font-weight: 600;
 		}
 
@@ -1107,20 +1107,16 @@ input, select, textarea {
 /* BG */
 
 	#bg {
-		-moz-transform: scale(1.0);
-		-webkit-transform: scale(1.0);
-		-ms-transform: scale(1.0);
-		transform: scale(1.0);
-		-webkit-backface-visibility: hidden;
 		position: fixed;
 		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100vh;
 		z-index: 1;
+		background: #f7f2e7;
 	}
 
-		#bg:before, #bg:after {
+		#bg:before {
 			content: '';
 			display: block;
 			position: absolute;
@@ -1128,56 +1124,12 @@ input, select, textarea {
 			left: 0;
 			width: 100%;
 			height: 100%;
-		}
-
-		#bg:before {
-			-moz-transition: background-color 2.5s ease-in-out;
-			-webkit-transition: background-color 2.5s ease-in-out;
-			-ms-transition: background-color 2.5s ease-in-out;
-			transition: background-color 2.5s ease-in-out;
-			-moz-transition-delay: 0.75s;
-			-webkit-transition-delay: 0.75s;
-			-ms-transition-delay: 0.75s;
-			transition-delay: 0.75s;
-			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto,
- 256px 256px;
-			background-position: center,
- center;
-			background-repeat: no-repeat,
- repeat;
-			z-index: 2;
-		}
-
-		#bg:after {
-			-moz-transform: scale(1.125);
-			-webkit-transform: scale(1.125);
-			-ms-transform: scale(1.125);
-			transform: scale(1.125);
-			-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out;
-			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
-			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
-			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/bg.jpg");
-			background-position: center;
-			background-size: cover;
-			background-repeat: no-repeat;
+			background-image: radial-gradient(rgba(215, 164, 60, 0.10) 0%, rgba(215, 164, 60, 0) 65%);
 			z-index: 1;
 		}
 
-		body.is-article-visible #bg:after {
-			-moz-transform: scale(1.0825);
-			-webkit-transform: scale(1.0825);
-			-ms-transform: scale(1.0825);
-			transform: scale(1.0825);
-			-moz-filter: blur(0.2rem);
-			-webkit-filter: blur(0.2rem);
-			-ms-filter: blur(0.2rem);
-			filter: blur(0.2rem);
-		}
-
 		body.is-preload #bg:before {
-			background-color: #000000;
+			opacity: 0;
 		}
 
 /* Wrapper */
@@ -1254,10 +1206,7 @@ input, select, textarea {
 		-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
 		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-		background-image: -moz-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
-		background-image: -webkit-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
-		background-image: -ms-radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
-		background-image: radial-gradient(rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0) 55%);
+		background-image: none;
 		max-width: 100%;
 		text-align: center;
 	}
@@ -1279,7 +1228,7 @@ input, select, textarea {
 				left: calc(50% - 1px);
 				width: 1px;
 				height: calc(3.5rem + 1px);
-				background: #ffffff;
+				background: rgba(58, 54, 48, 0.4);
 			}
 
 		#header > :first-child {
@@ -1296,7 +1245,7 @@ input, select, textarea {
 		    align-items: center;
 		    width: 5.5rem;
 		    height: 5.5rem;
-		    border: solid 1px #ffffff;
+		    border: solid 1px rgba(58, 54, 48, 0.4);
 		    border-radius: 50%;
 		}
 
@@ -1308,7 +1257,7 @@ input, select, textarea {
 
 		#header .content {
 			border-style: solid;
-			border-color: #ffffff;
+			border-color: rgba(58, 54, 48, 0.4);
 			border-top-width: 1px;
 			border-bottom-width: 1px;
 			max-width: 100%;
@@ -1347,13 +1296,13 @@ input, select, textarea {
 			margin-bottom: 0;
 			list-style: none;
 			padding-left: 0;
-			border: solid 1px #ffffff;
+			border: solid 1px rgba(58, 54, 48, 0.4);
 			border-radius: 4px;
 		}
 
 			#header nav ul li {
 				padding-left: 0;
-				border-left: solid 1px #ffffff;
+				border-left: solid 1px rgba(58, 54, 48, 0.4);
 			}
 
 				#header nav ul li:first-child {
@@ -1373,11 +1322,11 @@ input, select, textarea {
 				}
 
 					#header nav ul li a:hover {
-						background-color: rgba(255, 255, 255, 0.075);
+						background-color: rgba(58, 54, 48, 0.06);
 					}
 
 					#header nav ul li a:active {
-						background-color: rgba(255, 255, 255, 0.175);
+						background-color: rgba(58, 54, 48, 0.12);
 					}
 
 		#header nav.use-middle:after {
@@ -1388,7 +1337,7 @@ input, select, textarea {
 			left: calc(50% - 1px);
 			width: 1px;
 			height: 100%;
-			background: #ffffff;
+			background: rgba(58, 54, 48, 0.4);
 		}
 
 		#header nav.use-middle ul li.is-middle {
@@ -1485,7 +1434,7 @@ input, select, textarea {
 
 					#header nav ul li {
 						border-left: 0;
-						border-top: solid 1px #ffffff;
+						border-top: solid 1px rgba(58, 54, 48, 0.4);
 					}
 
 						#header nav ul li:first-child {
@@ -1550,7 +1499,7 @@ input, select, textarea {
 			position: relative;
 			width: 40rem;
 			max-width: 100%;
-			background-color: rgba(27, 31, 34, 0.85);
+			background-color: rgba(253, 250, 242, 0.92);
 			border-radius: 4px;
 			opacity: 0;
 		}
@@ -1590,17 +1539,17 @@ input, select, textarea {
 					height: 2.5rem;
 					border-radius: 100%;
 					background-position: center;
-					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20px' height='20px' viewBox='0 0 20 20' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23ffffff%3B stroke-width: 1%3B %7D%3C/style%3E%3Cline x1='2' y1='2' x2='18' y2='18' /%3E%3Cline x1='18' y1='2' x2='2' y2='18' /%3E%3C/svg%3E");
+					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20px' height='20px' viewBox='0 0 20 20' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %2333302b%3B stroke-width: 1%3B %7D%3C/style%3E%3Cline x1='2' y1='2' x2='18' y2='18' /%3E%3Cline x1='18' y1='2' x2='2' y2='18' /%3E%3C/svg%3E");
 					background-size: 20px 20px;
 					background-repeat: no-repeat;
 				}
 
 				#main article .close:hover:before {
-					background-color: rgba(255, 255, 255, 0.075);
+					background-color: rgba(58, 54, 48, 0.08);
 				}
 
 				#main article .close:active:before {
-					background-color: rgba(255, 255, 255, 0.175);
+					background-color: rgba(58, 54, 48, 0.15);
 				}
 
 		@media screen and (max-width: 736px) {
@@ -1672,7 +1621,7 @@ input, select, textarea {
 	aspect-ratio: 4 / 3;
 	overflow: hidden;
 	border-radius: 0.4rem;
-	background: rgba(255, 255, 255, 0.075);
+	background: rgba(58, 54, 48, 0.06);
 }
 
 .wedding-slideshow img {
@@ -1771,7 +1720,7 @@ input, select, textarea {
 		bottom: 0.4rem;
 		left: 0.3rem;
 		width: 1px;
-		background: rgba(255, 255, 255, 0.35);
+		background: rgba(58, 54, 48, 0.4);
 	}
 
 	.timeline-item {
@@ -1790,8 +1739,8 @@ input, select, textarea {
 			width: 0.6rem;
 			height: 0.6rem;
 			border-radius: 50%;
-			background: #1b1f22;
-			border: solid 1px #ffffff;
+			background: #f7f2e7;
+			border: solid 1px #8a3b3b;
 		}
 
 		.timeline-time {
@@ -1802,7 +1751,7 @@ input, select, textarea {
 		}
 
 		.timeline-text {
-			color: rgba(255, 255, 255, 0.85);
+			color: rgba(58, 54, 48, 0.85);
 			line-height: 1.5;
 		}
 
@@ -1828,7 +1777,7 @@ input, select, textarea {
 	font-size: 1rem;
 	line-height: 1.4;
 	word-wrap: break-word;
-	border-bottom: solid 1px rgba(255, 255, 255, 0.35);
+	border-bottom: solid 1px #d7a43c;
 	padding-bottom: 0.5rem;
 	margin: 2rem 0 0.75rem 0;
 }
@@ -1842,7 +1791,7 @@ article#QA > .qa-question:first-of-type {
 .qa-map {
 	border-radius: 4px;
 	overflow: hidden;
-	border: solid 1px rgba(255, 255, 255, 0.35);
+	border: solid 1px rgba(58, 54, 48, 0.4);
 	margin: 0.75rem 0 2.75rem 0;
 }
 
