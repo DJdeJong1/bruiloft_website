@@ -9,14 +9,14 @@
 		<title>Bruiloft Regina en Daan </title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css?v=4" /> #hier het versienummer wijzigen 
+		<link rel="stylesheet" href="assets/css/main.css?v=5" /> #hier het versienummer wijzigen
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
 			<div id="wrapper">
- 
+
 				<!-- Header -->
 					<header id="header">
 						<div class="logo">
@@ -34,7 +34,7 @@
 								<li><a href="#planning">Planning</a></li>
 								<li><a href="#QA">Q&A</a></li>
 
-								
+
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
@@ -51,7 +51,7 @@
 								<h2> Regina & Daan worden Voss-De Jong </h2>
 								<p> Wij geven elkaar het jawoord in de Laurentiuskerk in Raerd, Friesland. We vieren deze dag graag met jullie! </p>
 								<p> De dag start om 13:00 uur in het Dorpshuis De Trijesprong in Raerd. Na de ceremonie zijn jullie welkom voor drankjes en een diner. </p>
-								<p> Graag vernemen we via de RSVP vóór <b>1 november</b> of jullie op onze dag aanwezig kunnen zijn.  </p>
+								<p> Graag vernemen we via de RSVP voor <b>1 november</b> of jullie op onze dag aanwezig kunnen zijn.  </p>
 								<p> Cadeautip is een envelopje en voor wie het niet kan laten een kunstwerk (van eigen productie). Met Jolla Schelling kan contact opgenomen worden voor een bijdrage op de dag zelf, via haar telefonummer op de uitnodiging. Trek vooral aan waar je je bijzonder, feestelijk en fijn in voelt. </p>
 							</article>
 
@@ -60,7 +60,7 @@
 								<h2 class="major">RSVP</h2>
 								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
 								<p>Laat ons weten of je erbij bent! Zou je het formulier hieronder in willen vullen vóór 1 november?</p>
- 
+
 								<form method="POST" action="https://formspree.io/f/xnjebeye" id="rsvp-form">
 									<div class="fields">
 										<div class="field half">
@@ -113,15 +113,32 @@
 							<article id="planning">
 								<h2 class="major">Planning</h2>
 								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<ul style="list-style:none; padding:0; margin:0;">
-									<li style="margin-bottom:1em;"><b>13:00</b> — Ontvangst met suikerbrood, thee en koffie</li>
-									<li style="margin-bottom:1em;"><b>13:45</b> — Start ceremonie</li>
-									<li style="margin-bottom:1em;"><b>15:00</b> — Taart, drankje en foto's</li>
-									<li style="margin-bottom:1em;"><b>17:30</b> — Aan tafel</li>
-								</ul>
+
+								<div class="timeline">
+									<div class="timeline-item">
+										<div class="timeline-dot"></div>
+										<div class="timeline-time">13:00</div>
+										<div class="timeline-text">Ontvangst met suikerbrood, thee en koffie</div>
+									</div>
+									<div class="timeline-item">
+										<div class="timeline-dot"></div>
+										<div class="timeline-time">13:45</div>
+										<div class="timeline-text">Start ceremonie</div>
+									</div>
+									<div class="timeline-item">
+										<div class="timeline-dot"></div>
+										<div class="timeline-time">15:00</div>
+										<div class="timeline-text">Taart, drankje en foto's</div>
+									</div>
+									<div class="timeline-item timeline-item-last">
+										<div class="timeline-dot"></div>
+										<div class="timeline-time">17:30</div>
+										<div class="timeline-text">Aan tafel</div>
+									</div>
+								</div>
 							</article>
 
-					
+
 						<!-- QA -->
 							<article id="QA">
 								<h2 class="major">Q&A</h2>
@@ -129,10 +146,10 @@
 								<p>Tekst. </p>
 
 
-								<h4 class="major">Waar is de bruiloft?</h4> 
+								<h4 class="major">Waar is de bruiloft?</h4>
 								<p>De bruiloft is de Laurentiuskerk in Raerd (adres). </p>
 								<span class="image main"><img src="images/dorpshuis.jpeg" alt="" /></span>
-								
+
 							</article>
 
 						<!-- Elements -->
@@ -165,11 +182,10 @@ while (!deck.isInOrder()) {
 print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 								</section>
 
-								
-							
+
 
 								<section>
-								
+
 								</section>
 
 							</article>
@@ -193,7 +209,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/slideshow.js"></script>
- 
+
 			<script>
 				document.addEventListener('DOMContentLoaded', function () {
 					var attendingSelect = document.getElementById('rsvp-attending');
@@ -201,34 +217,34 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					var guestsSelect = document.getElementById('rsvp-guests');
 					var namesWrapper = document.getElementById('rsvp-guest-names-wrapper');
 					var namesContainer = document.getElementById('rsvp-guest-names');
- 
+
 					function clearGuestNames() {
 						namesContainer.innerHTML = '';
 					}
- 
+
 					function buildGuestNameFields(count) {
 						clearGuestNames();
 						for (var i = 1; i <= count; i++) {
 							var label = document.createElement('label');
 							label.setAttribute('for', 'rsvp-guest-name-' + i);
 							label.textContent = 'Naam persoon ' + i;
- 
+
 							var input = document.createElement('input');
 							input.type = 'text';
 							input.name = 'naam_persoon_' + i;
 							input.id = 'rsvp-guest-name-' + i;
 							input.placeholder = 'Voor- en achternaam';
 							input.required = true;
- 
+
 							var wrapDiv = document.createElement('div');
 							wrapDiv.style.marginBottom = '1rem';
 							wrapDiv.appendChild(label);
 							wrapDiv.appendChild(input);
- 
+
 							namesContainer.appendChild(wrapDiv);
 						}
 					}
- 
+
 					attendingSelect.addEventListener('change', function () {
 						if (attendingSelect.value === 'Ja, ik kom') {
 							guestsWrapper.style.display = '';
@@ -241,7 +257,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 							clearGuestNames();
 						}
 					});
- 
+
 					guestsSelect.addEventListener('change', function () {
 						var count = parseInt(guestsSelect.value, 10);
 						if (count > 0) {
@@ -254,7 +270,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					});
 				});
 			</script>
- 
+
 
 	</body>
 </html>
