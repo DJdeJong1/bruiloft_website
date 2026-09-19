@@ -1132,6 +1132,20 @@ input, select, textarea {
 			opacity: 0;
 		}
 
+		.flower-overlay {
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			width: 65%;
+			min-width: 20rem;
+			max-width: 55rem;
+			height: auto;
+			transform: translateX(-50%);
+			z-index: 2;
+			opacity: 0.4;
+			pointer-events: none;
+		}
+
 /* Wrapper */
 
 	#wrapper {
@@ -1823,4 +1837,72 @@ article#QA > .qa-question:first-of-type {
 
 	#header h1 .name-right {
 		text-align: left;
+	}
+
+/* Menu popup */
+
+.menu-toggle {
+	cursor: pointer;
+}
+
+.menu-popup {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(33, 30, 25, 0.75);
+	z-index: 1000;
+	padding: 2rem;
+	overflow-y: auto;
+}
+
+	.menu-popup.is-visible {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.menu-popup-inner {
+		position: relative;
+		max-width: 40rem;
+		width: 100%;
+		background: #fdfaf2;
+		border-radius: 4px;
+		padding: 1.5rem;
+	}
+
+		.menu-popup-inner img {
+			display: block;
+			width: 100%;
+			border-radius: 4px;
+		}
+
+	.menu-popup-close {
+		position: absolute;
+		top: -1.25rem;
+		right: -1.25rem;
+		width: 2.5rem;
+		height: 2.5rem;
+		border-radius: 50%;
+		background: #8a3b3b;
+		color: #fdfaf2;
+		font-size: 1.5rem;
+		line-height: 2.5rem;
+		text-align: center;
+		cursor: pointer;
+	}
+
+	@media screen and (max-width: 480px) {
+
+		.menu-popup {
+			padding: 1rem;
+		}
+
+		.menu-popup-close {
+			top: -1rem;
+			right: -1rem;
+		}
+
 	}
