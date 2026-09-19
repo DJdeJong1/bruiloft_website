@@ -1817,3 +1817,22 @@ input, select, textarea {
 			}
 
 	}
+
+/* Q&A questions */
+
+.qa-question {
+	width: auto;
+	max-width: 100%;
+	text-transform: none;
+	letter-spacing: 0.01rem;
+	font-size: 1rem;
+	line-height: 1.4;
+	word-wrap: break-word;
+	border-bottom: solid 1px rgba(255, 255, 255, 0.35);
+	padding-bottom: 0.5rem;
+	margin: 2rem 0 0.75rem 0;
+}
+
+article#QA > .qa-question:first-of-type {
+	margin-top: 1.5rem;
+}
