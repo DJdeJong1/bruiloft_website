@@ -1798,3 +1798,9 @@ article#QA > .qa-question:first-of-type {
 	.qa-map iframe {
 		display: block;
 	}
+
+/* Gold ampersand accent */
+
+.amp-accent {
+	color: #d7a43c;
+}
