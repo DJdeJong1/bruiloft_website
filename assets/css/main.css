@@ -1299,7 +1299,7 @@ input, select, textarea {
 		    border: solid 1px #ffffff;
 		    border-radius: 50%;
 		}
-		
+
 		#header .logo .logo-icon {
 		    width: 2.8rem;
 		    height: 2.8rem;
@@ -1755,3 +1755,65 @@ input, select, textarea {
 		aspect-ratio: 3 / 4;
 	}
 }
+
+/* Planning timeline */
+
+.timeline {
+	position: relative;
+	margin: 2.5rem 0;
+	padding-left: 2rem;
+}
+
+	.timeline:before {
+		content: '';
+		position: absolute;
+		top: 0.4rem;
+		bottom: 0.4rem;
+		left: 0.3rem;
+		width: 1px;
+		background: rgba(255, 255, 255, 0.35);
+	}
+
+	.timeline-item {
+		position: relative;
+		padding-bottom: 1.75rem;
+	}
+
+		.timeline-item-last {
+			padding-bottom: 0;
+		}
+
+		.timeline-dot {
+			position: absolute;
+			top: 0.3rem;
+			left: -2rem;
+			width: 0.6rem;
+			height: 0.6rem;
+			border-radius: 50%;
+			background: #1b1f22;
+			border: solid 1px #ffffff;
+		}
+
+		.timeline-time {
+			font-weight: 600;
+			letter-spacing: 0.15rem;
+			font-size: 0.9rem;
+			margin-bottom: 0.25rem;
+		}
+
+		.timeline-text {
+			color: rgba(255, 255, 255, 0.85);
+			line-height: 1.5;
+		}
+
+	@media screen and (max-width: 480px) {
+
+		.timeline {
+			padding-left: 1.5rem;
+		}
+
+			.timeline-dot {
+				left: -1.5rem;
+			}
+
+	}
