@@ -1,11 +1,15 @@
 <!DOCTYPE HTML>
-
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
 	<head>
 		<title>Bruiloft Regina en Daan </title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css?v=15" /> #hier het versienummer wijzigen
+		<link rel="stylesheet" href="assets/css/main.css?v=18" /> #hier het versienummer wijzigen
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -129,7 +133,7 @@
 									<div class="timeline-item timeline-item-last">
 										<div class="timeline-dot"></div>
 										<div class="timeline-time">17:30</div>
-										<div class="timeline-text">Aan tafel! Kijk hier vast voor het (plantaardige) menu. </div>
+										<div class="timeline-text">Aan tafel! Kijk <a href="#" id="menu-link" class="menu-toggle">hier</a> vast voor het (plantaardige) menu.</div>
 									</div>
 								</div>
 							</article>
@@ -262,7 +266,17 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			</div>
 
 		<!-- BG -->
-			<div id="bg"></div>
+			<div id="bg">
+				<img src="images/flowers-gold.png" alt="" class="flower-overlay" />
+			</div>
+
+		<!-- Menu popup -->
+			<div id="menu-popup" class="menu-popup">
+				<div class="menu-popup-inner">
+					<span class="menu-popup-close" id="menu-popup-close">&times;</span>
+					<img src="images/menu.jpg" alt="Menu" />
+				</div>
+			</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -330,6 +344,28 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 							clearGuestNames();
 						}
 					});
+
+					// Menu popup
+					var menuLink = document.getElementById('menu-link');
+					var menuPopup = document.getElementById('menu-popup');
+					var menuClose = document.getElementById('menu-popup-close');
+
+					if (menuLink && menuPopup && menuClose) {
+						menuLink.addEventListener('click', function (e) {
+							e.preventDefault();
+							menuPopup.classList.add('is-visible');
+						});
+
+						menuClose.addEventListener('click', function () {
+							menuPopup.classList.remove('is-visible');
+						});
+
+						menuPopup.addEventListener('click', function (e) {
+							if (e.target === menuPopup) {
+								menuPopup.classList.remove('is-visible');
+							}
+						});
+					}
 				});
 			</script>
 
