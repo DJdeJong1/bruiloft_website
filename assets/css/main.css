@@ -1810,7 +1810,7 @@ article#QA > .qa-question:first-of-type {
 	display: grid;
 	grid-template-columns: 1fr auto 1fr;
 	align-items: baseline;
-	column-gap: 0.4rem;
+	column-gap: 1.1rem;
 }
 
 	#header h1 .amp-accent {
